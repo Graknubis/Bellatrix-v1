@@ -1,0 +1,174 @@
+{% extends "partials/body.html" %}
+{% load static %}
+{% block contenido %}
+    <!--------------------------------------CARRUSEL / SLIDE -------------------------------->
+    <section id="home" class="container-flex mt-5 py-3">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static "assets/slider-1.png" %}" class="d-block w-100"
+                        alt="Mujer joven con hoodie amarillo tomando una selfie">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Tus diseños marcan tu estilo</h3>
+                        <h5>Comparte tu propio estilo y tus diseños en tus selfies</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static "assets/slider-2.png" %}" class="d-block w-100" alt="Hombre con hoodie rojo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Tus diseños, únicos como tu</h3>
+                        <h5>Tu personalidad es única y tus diseños reflejan tu interior</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static "assets/slider-3.png" %}" class="d-block w-100" alt="Mujer con hoodie violeta">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Autenticidad y estilo</h3>
+                        <h5>Sorprende a tus amigos y a quienes más quieres con diseños hechos a su medida</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-------------------------SECCIÓN PRODUCTS / PRODUCTOS SECTION -------------------------------->
+    <section id="productos" class="container mt-5 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Empieza ya a personalizar tu prenda favorita
+                    <small class="text-muted">¡Antójate y ordena!</small>
+                </h2>
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <div class="row">
+                    <div class="col-6 col-lg-6 text-center mb-4 mb-lg-0">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/Hoodie_MU_frente.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="py-0 pb-0 ps-1"><i>Personaliza tu hoodie</i></h2>
+                                <h5>Da click para empezar a personalizar tu hoodie con tus diseños favoritos</h5>
+                                <div class="d-grid gap-2 col-6 mx-auto">                                    
+                                    <!-- <button class="btn btn-outline-dark" type="button text-decoration-none">Quiero mi hoodies</button> -->
+                                    <a class="btn btn-outline-info text-dark" href="hoodies.html" role="button">Quiero mi hoodies</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-6 text-center mb-4 mb-lg-0">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/t-shirt_MU_frente.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="py-0 pb-0"><i>Personaliza tu camiseta</i></h2>
+                                <h5>Da click para empezar a personalizar tu camiseta con tus diseños favoritos</h5>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <!-- <button class="btn btn-outline-dark text-decoration-underline" type="button"><a href="t-shirts.html">Quiero mi camiseta</a></button> -->
+                                    <a class="btn btn-outline-info text-dark" href="t-shirts.html" role="button">Quiero mi camistea</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- seccion e-commerce -->
+        <section id="products_hoodies" class="container mt-5 py-3">
+            <div>
+                <div class="col-12 text-center">
+                    <h2>Productos
+                        <small class="text-muted">recomendados</small>
+                    </h2>
+                    <div class="row my-3">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 1</h5>
+                                    <p class="card-text">Descripción del producto.</p>
+                                    <a href="#" class="btn btn-info">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 2</h5>
+                                    <p class="card-text">Descripción del producto.</p>
+                                    <a href="#" class="btn btn-info">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 2</h5>
+                                    <p class="card-text">Descripción del producto.</p>
+                                    <a href="#" class="btn btn-info">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 2</h5>
+                                    <p class="card-text">Descripción del producto.</p>
+                                    <a href="#" class="btn btn-info">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin seccion e-commerce -->
+
+            <!-------------------------SECCIÓN NOSOTROS / ABOUT US SECTION -------------------------------->
+    <section id="sobre nosotros">
+        <div class="col-12 text-center mt-5 py-3">
+            <h2>The Geek´s <small class="text-muted">House Store</small></h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <p>Somos un emprendimiento colombiano que se dedica al diseño de moda, específicamente de hoodies y
+                        camisetas personalizadas, empleamos materiales de primera calidad para garantizar la durabilidad
+                        y comodidad de todas las prendas en las cuales resaltamos la autenticidad de nuestros clientes y
+                        amigos a través de la personalización de sus diseños en nuestros productos.</p>
+                    <p>TGHS ofrece una alternativa a las prendas genéricas que se encuentran en el mercado, permitiendo
+                        a los clientes expresar su personalidad y estilo de una manera única y original, promovemos la
+                        creatividad y la individualidad a través de diseños personalizados. En TGHS nos destacamos como
+                        un emprendimiento innovador y prometedor en la industria de la moda en Colombia.</p>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="assets/disenador-moda-elegante-concepto-sala-exposiciones.jpg"
+                        alt="fashion workshop">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock contenido %}
